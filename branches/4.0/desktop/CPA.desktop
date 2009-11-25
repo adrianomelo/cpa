@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=0.1
+Name=CPA
+Name[pt_BR]=CPA
+Type=Application
+Comment=Disk encryption
+Comment[pt_BR]=Criptografia de disco
+Exec=CPA
+TryExec=CPA
+Icon=encrypted
+Categories=Qt;KDE;Utility;X-KDE-Utilities-File;

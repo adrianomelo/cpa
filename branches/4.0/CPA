@@ -1,0 +1,51 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+#  Copyright (C) 2009 - Tutoo Team
+
+# Wrapper around XCPA, displays messages in the first time the user runs CPA
+
+import sys, os
+from PyQt4 import QtCore, QtGui
+
+LICENSE = "/usr/share/cpa/LicenseCPA.txt"
+WELCOME = "/usr/share/cpa/WelcomeMessage.txt"
+XCPA = "/usr/bin/XCPA"
+
+def firstRun():
+	''' Checks if this is the first time XCPA is run '''
+	return not os.path.isdir(os.path.join(os.getenv("HOME"), ".cpa"))
+
+def showWelcome():
+	''' Displays a welcome message '''
+	msg = open(WELCOME, 'r')
+	QtGui.QApplication(sys.argv)
+	QtGui.QMessageBox.question(None, u'Bem vindo ao CPA', u'%s' % msg.read().decode("utf-8"), u"&Ok")
+
+	try:
+		msg.close()
+	except IOError:
+		pass
+
+def showLicense():
+	''' Displays the license, returning True if the user accepted and False otherwise '''
+	msg = open(LICENSE, 'r')
+	QtGui.QApplication(sys.argv)
+	ret = QtGui.QMessageBox.question(None, u'Licença', u'%s\nVocê aceita os termos acima?' % msg.read().decode("utf-8"), u"&Aceitar", u"&Recusar")
+
+	try:
+		msg.close()
+	except IOError:
+		pass
+	
+	return ret == 0
+
+if __name__ == "__main__":
+	if firstRun():
+		showWelcome()
+
+		if not showLicense():
+			sys.exit(0)
+	
+	os.system(XCPA)
+

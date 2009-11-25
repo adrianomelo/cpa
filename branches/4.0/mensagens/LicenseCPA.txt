@@ -1,0 +1,763 @@
+
+
+Licença do Software CPA
+
+ ___________________________
+
+
+(Parte) (d)o programa de computador CPA foi obtido a partir do software 
+licenciado gratuitamente pela Truecrypt, acessível através da página da web -
+www.truecrypt.org. O software CPA é distribuído sob esta licença no estado em 
+que se encontra, isento de quaisquer garantias, expressas ou tácitas, inclusive, 
+entre outras, garantias tácitas de adequação a uma finalidade específica ou de 
+não violação de direitos autorais. Em hipótese alguma a ITAUTEC S.A. -
+GRUPO ITAUTEC ("ITAUTEC") assumirá qualquer responsabilidade por dano 
+direto, indireto, ou por eventuais multas ou ações punitivas. A ITAUTEC 
+tampouco assumirá responsabilidade por fato imprevisto ou inevitável, 
+decorrentes de caso fortuito ou força maior. Da mesma forma a ITAUTEC não 
+garante a troca de mercadorias ou prestação de serviços correlatos, bem como 
+obrigação decorrente de perda de dados ou lucros cessantes ou inadequação à 
+uma determinada finalidade. A ITAUTEC não poderá ser responsabilizada, em 
+qualquer hipótese e sob qualquer teoria de responsabilidade, seja com base 
+em contrato, responsabilidade objetiva ou responsabilidade civil 
+extracontratual (inclusive negligência, imprudência ou imperícia), por danos ou 
+eventos resultantes, de alguma maneira, do uso deste programa de 
+computador.
+
+AVISOS IMPORTANTES: 
+
+A) CRIPTOGRAFIA DE ARQUIVOS E DOCUMENTOS - O software CPA fornece 
+criptografia de pastas e arquivos. A criptografia consiste em um processo de 
+conversão de dados para um formato ilegível por um usuário que não tenha a 
+chave de conversão por meio de senha. NÃO É PERMITIDA A VISUALIZAÇÃO 
+DO TEXTO LEGÍVEL DOS ARQUIVOS E PASTAS CRIPTOGRAFADOS SEM 
+INSERÇÃO DE SENHA, NEM MESMO PELO FABRICANTE. Os arquivos e pastas 
+criptografados são mantidos no disco rígido do computador. Se o computador 
+for reformatado sem que os arquivos e pastas criptografados tenham sido 
+descriptografados antes da operação e salvos em uma outra mídia, ESSES 
+ARQUIVOS E PASTAS SOFRERÃO DANOS PERMANENTES E FICARÃO 
+INACESSÍVEIS ATÉ MESMO COM A UTILIZAÇÃO DE CHAVE COM SENHA. 
+Eventuais problemas com o disco rígido do computador também poderão 
+causar danos irreparáveis aos arquivos e pastas criptografadas, razão pela qual 
+é recomendável a criação e manutenção constante de back up desses dados. 
+Criptografar um arquivo ou pasta tampouco provê proteção contra acesso de 
+listagem ou exclusões. Tal qual ocorre com arquivos e pastas não 
+criptografados, arquivos e pastas criptografados poderão ser listados ou 
+excluídos por usuários com acesso a eles, ainda que não tenham o login e a 
+senha - a visualização do arquivo não se confunde com a possibilidade de 
+listá-los ou excluí-los. 
+
+B) MANUTENÇÃO DE SENHA - Em razão da impossibilidade de leitura dos 
+arquivos e pastas criptografadas por qualquer indivíduo que não o detentor da 
+chave de conversão por meio de senha, RECOMENDAMOS QUE A SENHA SEJA 
+MANTIDA COMO INFORMAÇÃO CONFIDENCIAL EM LOCAL DIVERSO DO 
+PRÓPRIO COMPUTADOR, DE MANEIRA ABSOLUTAMENTE SEGURA E 
+ACESSÍVEL. A ITAUTEC não se responsabiliza pela restrição de leitura dos 
+arquivos e pastas criptografadas por extravio de senha. A manutenção de 
+senha é sua responsabilidade. 
+
+C) SEGURANÇA DOS DADOS - AO ACEITAR OS TERMOS DESTA LICENÇA, 
+VOCÊ CONCORDA QUE, MUITO EMBORA O SOFTWARE CPA SEJA UMA 
+FERRAMENTA APTA PARA A PROTEÇÃO DE DADOS EM SISTEMAS DE 
+COMPUTAÇÃO PESSOAL, NENHUMA FERRAMENTA DE SEGURANÇA É 
+IMPASSÍVEL DE VIOLAÇÃO, SENDO CERTO QUE O GRAU DE SEGURANÇA 
+OBTIDO PELO SEU SISTEMA SERÁ DIRETAMENTE PROPORCIONAL À 
+ROBUSTEZ E COMPLEXIDADE DO CONJUNTO DE FERRAMENTAS QUE O 
+COMPUSEREM.  A ITAUTEC NÃO SERÁ RESPONSÁVEL POR QUAISQUER DANOS 
+DECORRENTES DE EVENTUAIS QUEBRAS DE SIGILO.
+
+1. Definições:
+
+a) "software" refere-se ao conjunto de arquivos, código fonte, gráficos, textos 
+e demais componentes distribuídos sob a nomenclatura CPA, ora licenciados. 
+
+b) "software padrão" refere-se ao software denominado CPA isento de 
+modificações de autoria de terceiros.
+
+c) "você" refere-se às pessoas físicas, jurídicas, organizações ou entidades que 
+tenham acesso ao software ora licenciado.
+
+d) "disponibilização gratuita" ou "livre distribuição" significa a abstenção 
+voluntária de cobrança de qualquer valor em relação ao software (modificado 
+ou não) propriamente dito, embora possa haver cobrança de valores em razão 
+da manipulação do software, custos de distribuição ou prestação de serviços a 
+ele relacionados. Significa também que os recebedores do software podem 
+redistribuí-lo de acordo com as mesmas condições em que o receberam.
+
+e) "software modificado" ou "versão modificada" refere-se ao software obtido a 
+partir de modificações do código-fonte da versão original do software padrão. 
+
+1. O acesso ou utilização deste software implica em expressa aceitação e 
+concordância com as regras e condições previstas nesta licença. Se você não 
+concordar com o disposto na licença, não navegue ou utilize este software. 
+
+2. Esta licença contém referência a licenças de terceiros, que são incorporadas 
+em sua integralidade, devendo da mesma forma ser observadas. 
+
+3. Outros programas de computador, contendo restrições rigorosas ao uso e 
+transferência, poderão ser utilizados em associação com este programa, não 
+implicando, no entanto, que as regras e princípios aplicáveis nesta licença 
+também se aplicam a eles.
+
+4. É permitida a emissão e a livre distribuição de cópias literais da versão 
+original ou modificada deste software, desde que delas constem todos os 
+textos originais de licenças de uso de software livre e respectivas isenções de 
+responsabilidade.
+
+5. É permitida a aplicação de correções de erros de programação, de 
+portabilidade e outras modificações derivadas do software padrão. Todo 
+software assim modificado continuará sendo considerado como impassível de 
+apropriação de direitos autorais exclusivos.
+
+6. Você pode introduzir qualquer tipo de modificação em sua cópia deste 
+software, desde que atendidas às seguintes condições:
+
+A) disponibilize suas modificações livremente ou;
+
+B) use o software modificado apenas dentro da sua empresa ou organização.
+
+7. É permitida a distribuição do programa modificado baseado neste software, 
+em forma de código-fonte ou em forma executável, desde que atendidas, na 
+medida em que couberem, as seguintes condições:
+
+A) as redistribuições de código-fonte devem manter o texto integral desta 
+licença, contendo toda a relação de condições e a isenção de responsabilidade 
+que dela constam.
+
+B) as redistribuições em formato executável devem reproduzir o texto integral 
+desta licença, contendo toda a relação de condições e a isenção de 
+responsabilidade que dela constam, seja na documentação de orientação e 
+autorização de uso, seja em outros materiais fornecidos junto com a 
+distribuição.
+
+C) todos os tipos de redistribuição devem ser acompanhados de informações 
+sobre como obter o código-fonte completo do software modificado e de 
+qualquer software que use o software padrão. 
+
+D) o código-fonte pode tanto ser incluído na distribuição do próprio software 
+em associação com hardware e outros programas agregados, como ser 
+disponibilizado por custo não superior ao da distribuição acrescido de uma taxa 
+nominal correspondente ao valor da mídia, devendo ser, dessa forma, 
+livremente redistribuível sob condições razoáveis e semelhantes às ora 
+determinadas.
+
+8. É permitido distribuir, desde que gratuitamente, na forma estabelecida por 
+esta licença, software modificado a partir deste software, ainda que agregado a 
+outros programas (possivelmente comerciais) como parte de uma distribuição 
+mais ampla de diversos programas de computador agregados, sob a condição 
+de que o software modificado, elaborado a partir do CPA, não seja anunciado 
+como software de propriedade exclusiva ou sujeito a restrições por autoria. 
+
+9. O nome ITAUTEC S.A. - GRUPO ITAUTEC, ou qualquer outra nomenclatura, 
+símbolo ou referência de propriedade da ITAUTEC S.A. Não poderão ser 
+usados, em hipótese alguma, para endossar ou promover produto derivado 
+deste software.
+
+10. O uso inapropriado do software ou de qualquer bem de propriedade da 
+ITAUTEC sujeitará o infrator às medidas judiciais cabíveis.
+
+____________________________________________________________
+
+Licença Coletiva do TrueCrypt Versão 1.4
+
+O Software concedido sob a presente licença é distribuído "NO ESTADO EM 
+QUE SE ENCONTRA" SEM QUALQUER TIPO DE GARANTIA. A RESPONSABILIDADE DOS 
+AUTORES E DISTRIBUIDORES DO SOFTWARE É LIMITADA.
+
+A PESSOA QUE FOR USAR, COPIAR, MODIFICAR OU (RE)DISTRIBUIR QUALQUER PARTE 
+DE UM TRABALHO DISPONIBILIZADO SOB ESTA VERSÃO DA LICENÇA COLETIVA DO 
+TRUECRYPT ESTARÁ POR MEIO DESTE ATO CONCORDANDO COM TODOS OS TERMOS E 
+CONDIÇÕES DESTA LICENÇA E DAS CORRESPONDENTES LICENÇAS DE COMPONENTES OU 
+SOFTWARES DERIVADOS DO SW DA TRUECRYPT (VEJA A SEGUIR). SE NÃO ESTIVER DE 
+ACORDO COM OS MESMOS, NÃO USE, COPIE, MODIFIQUE NEM (RE)DISTRIBUA O 
+SOFTWARE DERIVADO, ORIGINAL OU QUALQUER PRODUTO ORIGINADO OU TENDO POR 
+BASE O SW TRUECRYPT OU QUALQUER DE SUAS PARTES.
+
+A Licença Coletiva TrueCrypt consiste de várias licenças diferentes, 
+incluídas neste documento (separadas por linhas consistindo de 
+sublinhados) e que estão referenciadas nesta seção como licenças de 
+componentes. Cada uma das licenças que compõe esta licença coletiva se 
+aplica apenas aos arquivos do código fonte ou a partes do software 
+original, nos quais a licença do SW original está incluída ou nos quais 
+ela é expressamente referenciada e aos formulários compilados ou 
+processados deste código fonte.
+Nenhuma das licenças incluídas nessa licença coletiva se aplica a este 
+produto como um todo, mesmo quando usa a frase "este produto", ou 
+qualquer outro termo/frase equivalente. A menos que indicado ao 
+contrário, os gráficos e os arquivos que não fazem parte do código fonte 
+são regidos exclusivamente pela Licença TrueCrypt. Observação: A Licença 
+TrueCrypt é uma das licenças de componentes das quais a Licença Coletiva 
+TrueCrypt consiste.
+
+____________________________________________________________
+
+Este software é protegido por copyright (c) 2003-2008 TrueCrypt 
+Foundation
+
+Licença do TrueCrypt Versão 2.5
+
+
+I. Definições
+
+1. "Este Produto" significa o trabalho (inclusive, mas não limitado a, o 
+código fonte, gráficos, textos, e arquivos relacionados) disponibilizado 
+sob e regido pela presente versão desta licença ("Licença") conforme será 
+indicado por, mas não será limitado a, notificação(ões) de copyright 
+anexas à ou incluídas no trabalho.
+
+2. "Você" significa (e "Sua" se refere a) um indivíduo ou uma entidade 
+jurídica (ex. uma organização sem fins lucrativos, uma empresa comercial, 
+uma entidade governamental etc) executando as permissões concedidas por 
+esta Licença.
+
+3. "Modificação" significa (e "modificar" se refere a) qualquer alteração 
+deste Produto, inclusive, mas não limitado a,  adição ou exclusão de 
+dados essenciais ou estruturais deste Produto, e a tradução em outro 
+idioma.
+
+4. "Seu Produto" significa Este Produto modificado por Você ou qualquer 
+trabalho que Você venha a produzir a partir do (ou com base no) Produto 
+da Truecrypt, incluindo qualquer trabalho no qual Você venha a incluir 
+Este Produto ou qualquer parte do mesmo.
+
+5. "Distribuição" significa (e "distribuir" se refere a), 
+independentemente dos meios ou métodos, transmissão, transferência, 
+fornecimento ou disponibilização Deste/Seu Produto ou partes do mesmo a 
+terceiros (inclusive, mas não limitado a, disponibilização Deste/Seu 
+Produto ou partes do mesmo, para "download" a terceiros, 
+independentemente de necessidade de qualquer terceiro fazer ou não o 
+download do produto, ou qualquer parte do mesmo, sendo considerada a 
+distribuição se houver disponibilização para o download). 
+
+
+
+II. Termos e Condições para Uso, Cópia e Distribuição 
+
+1. Você pode copiar e/ou distribuir Este Produto, desde que Você não 
+modifique o mesmo (para verificar quais são os termos e condições para 
+poder copiar e distribuir as versões modificadas deste Produto, consulte 
+o Capítulo III), e desde que Você não inclua Este Produto em outro 
+produto (exceto conforme permitido no Capítulo III), e desde que Você 
+garanta que todas as notificações e documentos legais (contendo, por 
+exemplo, o texto desta Licença, referências a esta Licença etc) sejam 
+incluídos com Este Produto (ou Produto modificado) e sejam fornecidos com 
+cada cópia deste Produto que Você fizer e distribuir, e desde que Você 
+cumpra todos os termos e condições aplicáveis a esta Licença. 
+
+2. Desde que Você cumpra todos os termos e condições aplicáveis a esta 
+Licença, Você poderá usar Este Produto livremente (veja também o Capítulo 
+III) em qualquer quantidade de computadores/sistemas para finalidades 
+não-comerciais e/ou comerciais.
+
+
+
+III. Termos e Condições para Modificação e Desenvolvimento de Novos 
+Produtos
+
+1. Se todas as condições especificadas nos parágrafos deste Capítulo 
+(III) forem atendidas (para exceções, consulte a Seção III.2) e se Você 
+estiver em conformidade com todos os demais termos e condições desta 
+Licença, Você poderá modificar Este Produto (formando assim o Seu 
+Produto) bem como desenvolver novos trabalhos a partir Deste Produto ou 
+de partes do mesmo (formando assim o Seu Produto), incluir Este Produto 
+ou partes do mesmo em outro produto (formando Seu Produto).  Você poderá 
+ainda, nessas condições, usar (para finalidades não-comerciais e/ou 
+comerciais) copiar, e/ou distribuir Seu Produto.
+
+a. O nome de Seu Produto (ou de Sua versão modificada dEste Produto) 
+não deverá conter o nome TrueCrypt (por exemplo, os nomes a seguir 
+não são permitidos: TrueCrypt,TrueCrypt+, TrueCrypt Professional, 
+iTrueCrypt, etc.) nem qualquer outro nome semelhante ao nome 
+TrueCrypt (ex. True-Crypt, True Crypt, TruKrypt, etc.) 
+
+Observação: TrueCrypt e os logotipos TrueCrypt são marcas 
+registradas da TrueCrypt Foundation. A meta não é monetizar o nome 
+ou o produto, mas proteger a reputação do TrueCrypt e evitar 
+problemas de suporte e demais tipos de inconveniências que possam 
+surgir devido à existência de produtos similares com o mesmo nome ou 
+com nome semelhante. Apesar do TrueCrypt e do logotipo TrueCrypt 
+serem marcas registradas, TrueCrypt é e permanecerá um software 
+livre e de fonte aberta.
+
+Todas as ocorrências do nome TrueCrypt que podem ser razoavelmente 
+consideradas para identificar Seu Produto devem ser removidas do 
+mesmo e de qualquer material associado. Os logotipos incluídos em 
+(ou anexados ao) Seu Produto (e em/com materiais associados) não 
+devem ser incorporados e não devem ser similares a qualquer logotipo 
+da TrueCrypt (inclusive o símbolos ou sinais de marcas, como por 
+exemplo o sinal distintivo que consiste em uma chave em formato 
+estilizado) ou parte(s) do mesmo. Todos os gráficos incluídos Neste 
+Produto (logotipos, ícones, etc.) devem ser removidos de Seu Produto 
+(ou de Sua versão modificada Deste Produto) e de qualquer material 
+associado.
+
+b. As frases a seguir devem ser removidas de Seu Produto e de 
+qualquer material associado, exceto o texto da presente Licença: 
+"Uma Versão da TrueCrypt Foundation", "Emitido pela TrueCrypt 
+Foundation", "Esta é uma versão da TrueCrypt Foundation."
+
+c. A frase "Baseado no TrueCrypt, disponível gratuitamente no 
+endereço http://www.truecrypt.org/" deve ser exibida no Seu 
+Produto(se tecnicamente viável) e incluída na sua documentação. De 
+modo alternativo, se Este Produto ou parte do mesmo que Você for 
+incluir no Seu Produto constituir apenas uma parte pequena de Seu 
+Produto, a frase "Partes deste produto estão baseadas no TrueCrypt, 
+disponível gratuitamente no endereço http://www.truecrypt.org/" 
+deverá ser exibida. Em ambos os casos mencionados acima neste 
+parágrafo, "http://www.truecrypt.org/" deverá ser um hiperlink (se 
+tecnicamente viável) apontando para http://www.truecrypt.org/ e Você 
+poderá escolher livremente o local dentro da interface de usuário 
+(se houver) de Seu Produto (ex. uma janela "Sobre" etc.) e a maneira 
+em que o Seu Produto exibirá a respectiva frase.
+
+Seu Produto (e qualquer material associado, ex. a documentação, o 
+conteúdo do site oficial de web do Seu Produto, etc.) não deve 
+apresentar qualquer endereço de Internet que contenha o nome de 
+domínio truecrypt.org (ou qualquer nome de domínio que leva para o 
+nome de domínio truecrypt.org) de maneira que possa sugerir ser o 
+local onde as informações sobre o Seu Produto podem ser obtidas ou 
+onde os "bugs" identificados no Seu Produto possam ser relatados ou 
+ainda onde o suporte para o Seu Produto possa estar disponível ou de 
+outro modo tentar indicar que o nome de domínio truecrypt.org está 
+associado ao Seu Produto.
+
+d. O código de fonte completo de Seu Produto deve estar livre e 
+publicamente disponível (para as exceções, consulte as Seções III.2 
+e III.3) no mínimo até Você cessar de distribuir o Seu Produto. Para 
+atender a esta condição, basta Você incluir o código fonte junto com 
+cada cópia de Seu Produto que Você for fazer e distribuir (veja 
+também a seguir nesta Subseção III.1.d as condições que as licenças 
+regendo o código fonte devem atender) desde que Você disponibilize 
+as cópias ao público em geral, gratuitamente; basta também Você 
+incluir as informações (válidas e corretas até no mínimo Você cessar 
+de distribuir o Seu Produto) sobre onde o código de fonte pode ser 
+obtido gratuitamente (ex. um endereço de Internet, etc.) com cada 
+cópia de Seu Produto que Você for fazer e distribuir (veja também a 
+seguir nesta Subseção III.1.d as condições que as licenças regendo o 
+código de fonte devem atender) desde que Você disponibilize as 
+cópias ao público em geral, gratuitamente.
+
+Partes do código fonte criadas por Você (ex. Suas adições a Este 
+Produto) devem estar disponíveis sob a(s) licença(s) que está(ão) 
+compatível(éis)com a presente versão da Licença do TrueCrypt (porém, 
+consulte também a Subseção III.1.e) e que permite(m) que qualquer 
+pessoa modifique e desenvolva novos trabalhos a partir das partes do 
+código fonte que forem criadas por Você e para usar, copiar e 
+redistribuir essas modificações e/ou trabalhos derivativos. 
+A(s)licença(s) deve(m) ser perpétua(s), não-exclusiva(s), sem 
+royalties, sem ônus e global(ais) e não deve(m) ser invalidada(s), 
+enfraquecida(s), restrita(s), corrigida(s), modificada(s), 
+interferida(s) com ou de outro modo afetar qualquer parte, termo, 
+disposição, ou cláusula da presente Licença. O texto da(s) 
+licença(s) deve ser incluído em cada cópia de Seu Produto que Você 
+fizer e distribuir. O código fonte não deve ser deliberadamente 
+ofuscado e não deve estar em forma intermediária (ex. a saída de um 
+preprocessador). Código fonte significa a forma preferida na qual um 
+programador normalmente modificaria o programa.
+
+Observação: Se não puder atender às exigências acima, poderemos 
+conceder uma exceção de acordo com determinadas condições. Uma 
+exceção poderá ser solicitada via: licensing@truecrypt.org 
+
+e. Você não poderá, de forma alguma, alterar os termos da licença 
+Deste Produto (a adição de qualquer novo termo será considerada como 
+alteração nos termos da licença mesmo se os termos originais sejam 
+retidos) o que significa, por exemplo, que nenhuma parte Deste 
+Produto poderá ser colocada em outra licença. Você deve manter 
+intactos todos os avisos legais contidos nos arquivos do código 
+fonte. Você deve incluir os itens a seguir em cada cópia de Seu 
+Produto que Você fizer e distribuir: um aviso claro e evidente 
+indicando que o Seu Produto ou parte(s) do mesmo é/são distribuídos 
+de acordo com esta versão da Licença TrueCrypt, uma cópia literal 
+desta versão da Licença TrueCrypt (conforme incluída aqui), um aviso 
+claro e evidente contendo informações sobre onde a cópia inclusa da 
+licença pode ser localizada e um aviso de copyright apropriado.
+
+f. Sem uma autorização prévia e específica por escrito dos autores 
+Deste Produto (ou de seu representante), Você não deverá usar o nome 
+Deste Produto, os nomes dos autores Deste Produto, nem os nomes das 
+entidades legais das quais os autores eram/são membros/funcionários, 
+para endossar ou promover o Seu Produto (ou Você, ou Suas afiliadas) 
+ou de qualquer modo sugerir que o Seu Produto (ou Você ou Suas 
+afiliadas) está/estão endossado(s) por um ou mais autores Deste 
+Produto, ou de qualquer modo sugerir que um ou mais autores Deste 
+Produto esteja/estejam afiliado(s) com Você ou participou(aram) 
+diretamente na criação de Seu Produto.
+
+
+2. Você não é obrigado a atender os requisitos das Subseções III.1.a, 
+III.1.b, III.1.c,e III.1.d, se todas as condições especificadas em uma 
+das duas Subseções a seguir (III.2.a ou III.2.b) forem cumpridas:
+
+a. Seu Produto é uma distribuição de sistema operacional, ou 
+distribuição de software agregada (como um CD-ROM de capa de uma 
+revista) contendo produtos de fontes diferentes, na qual Você inclui 
+Este Produto sem qualquer modificação ou arquivo(s) que Você obtém 
+compilando o código fonte não modificado Deste Produto (veja também 
+a Seção VI.4).
+b. Você inclui Este Produto na sua totalidade e sem modificações 
+(Você pode omitir o código fonte Deste Produto) como parte não-
+integral de Seu Produto (ou seja, nenhuma funcionalidade principal 
+de Seu Produto será afetada caso esta parte não integral seja 
+removida)) e a frase "Este produto utiliza o TrueCrypt, disponível 
+sem ônus em http://www.truecrypt.org/" ou a frase "Este produto 
+inclui o TrueCrypt, disponível sem ônus em 
+http://www.truecrypt.org/" deverá ser exibida no Seu Produto (se 
+tecnicamente viável) e incluída na sua documentação. Em ambos os 
+casos mencionados acima neste parágrafo, "http://www.truecrypt.org/" 
+deverá ser um hiperlink (se tecnicamente viável) apontando para 
+http://www.truecrypt.org/ e Você poderá escolher livremente o local 
+dentro da interface de usuário (se houver) de Seu Produto (ex. uma 
+janela "Sobre" etc.) e a maneira em que o Seu Produto exibirá a 
+respectiva frase.
+
+Observação: Se não puder atender às exigências da Subseção III .1.d, 
+poderemos conceder uma exceção de acordo com determinadas condições. 
+Uma exceção poderá ser solicitada via:
+licensing@truecrypt.org 
+
+3. Você não é obrigado a atender os requisitos da Subseção III.1.d se o 
+Seu Produto não for distribuído (i.e.Seu Produto estiver disponível 
+apenas para Você).
+
+
+
+IV Limitação de Responsabilidade, Renúncia de Garantia, Indenização
+
+Você reconhece e concorda expressamente com o seguinte:
+
+1. EM NENHUMA CIRCUNSTÂNCIA O (CO)AUTOR DESTE PRODUTO, OU QUALQUER 
+PROPRIETÁRIO DA MARCA REGISTRADA/COPYRIGHT APLICÁVEL, OU QUALQUER OUTRA 
+PARTE QUE POSSA COPIAR E/OU (RE)DISTRIBUIR ESTE PRODUTO OU PARTES DO 
+MESMO, CONFORME PERMITIDO NO PRESENTE DOCUMENTO, SERÁ RESPONSÁVEL PERANTE 
+VOCÊ OU QUALQUER OUTRA PARTE POR QUAISQUER DANOS, INCLUSIVE, MAS NÃO 
+LIMITADO A, QUALQUER DANO DIRETO OU INDIRETO, GERAL, ESPECIAL, 
+INCIDENTAL, PUNITIVO, EXEMPLAR, OU CONSEQUENCIAL (INCLUSIVE, MAS NÃO 
+LIMITADO A, CORRUPÇÃO OU PERDA DE DADOS, QUALQUER PERDA SUSTENTADA POR 
+VOCÊ OU TERCEIROS, UMA FALHA DESTE PRODUTO EM OPERAR COM QUALQUER OUTRO 
+PRODUTO, SUPRIMENTO DE BENS OU SERVIÇOS SUBSTITUTOS, OU INTERRUPÇÃO DOS 
+NEGÓCIOS) SE EM CONTRATO, RESPONSABILIDADE RIGOROSA, PREJUÍZO (INCLUSIVE 
+NEGLIGÊNCIA) OU DE OUTRO MODO RESULTANDO DO USO, CÓPIA, MODIFICAÇÃO OU 
+(RE)DISTRIBUIÇÃO DESTE PRODUTO (OU PARTE DO MESMO) OU DE SEU PRODUTO (OU 
+PARTE DO MESMO) OU INCAPACIDADE DE USAR ESTE PRODUTO (OU PARTE DO MESMO) 
+MESMO SE O (CO)AUTOR, PROPRIETÁRIO DO COPYRIGHT OU DA MARCA REGISTRADA OU 
+QUALQUER OUTRA PARTE FOREM NOTIFICADOS DA POSSIBILIDADE DA OCORRÊNCIA 
+DESSES DANOS.
+
+2. ESTE PRODUTO É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA" SEM QUALQUER 
+TIPO DE GARANTIA EXPLÍCITA, IMPLÍCITA OU ESTATUTÁRIA, INCLUSIVE, MAS NÃO 
+LIMITADO A, AS GARANTIAS DE COMERCIABILIDADE, ADEQUAÇÃO A QUALQUER 
+PROPÓSITO ESPECÍFICO E NÃO VIOLAÇÃO. O RISCO INTEIRO QUANTO À QUALIDADE E 
+DESEMPENHO DESTE PRODUTO É SEU.
+SE ESTE PRODUTO FOR EVIDENCIADO COMO DEFEITUOSO, VOCÊ ASSUMIRÁ OS CUSTOS 
+INCORRIDOS COM OS SERVIÇOS DE REPAROS OU CORREÇÃO.
+
+3. ESTE PRODUTO PODE CONTER IMPLEMENTAÇÕES DE ALGORÍTMOS CRIPTOGRÁFICOS 
+QUE SÃO CONTROLADOS (EX, SUJEITOS A REGULAMENTOS DE CONTROLE PARA 
+EXPORTAÇÃO / IMPORTAÇÃO) OU ILEGAIS EM ALGUNS PAÍSES. É RESPONSABILIDADE 
+EXCLUSIVA SUA VERIFICAR SE É LEGAL IMPORTAR E/OU (RE)EXPORTAR E/OU USAR 
+ESTE PRODUTO (OU PARTES DO MESMO) EM PAÍSES ONDE VOCÊ PRETENDE USÁ-LO 
+E/OU PARA O QUAL VOCÊ TIVER INTENÇÃO DE EXPORTÁ-LO E É RESPONSABILIDADE 
+EXCLUSIVA SUA CUMPRIR COM OS REGULAMENTOS, RESTRIÇÕES E LEIS APLICÁVEIS. 
+
+4. VOCÊ INDENIZARÁ, DEFENDERÁ E MANTERÁ TODOS OS (C0)AUTORES DESTE 
+PRODUTO, SEUS AGENTES E ASSOCIADOS E OS PROPRIETÁRIOS DO COPYRIGHT/MARCAS 
+REGISTRADAS APLICÁVEIS LIVRES DE E CONTRA QUALQUER E TODAS AS 
+RESPONSABILIDADES, DANOS, PERDAS, ACORDOS, PENALIDADES, MULTAS, CUSTOS, 
+DESPESAS (INCLUSIVE HONORÁRIOS ADVOCATÍCIOS RAZOÁVEIS), DEMANDAS, CAUSAS 
+DE AÇÃO, RECLAMAÇÕES, ATOS JUDICIAIS E PROCESSOS JUDICIAIS RELACIONADOS A 
+OU RESULTANDO DE SEU USO, INCAPACIDADE DE USAR, COPIAR, (RE)DISTRIBUIR, 
+IMPORTAR E/OU (RE)EXPORTAR ESTE PRODUTO (OU PARTES DO MESMO) E/OU SUA NÃO 
+CONFORMIDADE A RESPEITO DE QUALQUER TERMO DA PRESENTE LICENÇA.
+
+
+
+V. Marcas Registradas
+
+A presente Licença não concede permissão para usar as marcas registradas 
+associadas a (ou que se aplicam a) Este Produto, exceto o uso justo 
+conforme definido pela lei aplicável e exceto para uso expressamente 
+permitido ou necessário por esta Licença. Qualquer outra tentativa para 
+usar as marcas registradas associadas a (ou que se aplicam a) Este 
+Produto cancelará automatica e imediatamente Seus direitos sob Esta 
+Licença e poderá constituir uma violação à marca registrada (o que pode 
+ser sujeito a ato judicial).
+
+TrueCrypt é marca registrada da TrueCrypt Foundation registrada na World 
+Intellectual Property Organization, uma entidade das Nações Unidas 
+(registro internacional de marcas), no U.S. Patent and Trademark Office 
+(Escritório de Marcas Registradas e Patentes dos EUA) e nos escritórios 
+de marcas registradas em demais países. Todos os logotipos TrueCrypt 
+(inclusive o logo não textual consistindo principalmente de uma chave em 
+formato estilizado) são marcas registradas da TrueCrypt Foundation.
+
+Observação: A meta não é comercializar o nome ou o produto, mas proteger 
+a reputação da TrueCrypt. TrueCrypt é e permanecerá um software livre e 
+de fonte aberta.
+
+
+
+VI. Termos e Condições Gerais, Disposições Miscelâneas
+
+1. QUALQUER PESSOA QUE FOR UTILIZAR E/OU COPIAR E/OU MODIFICAR E/OU CRIAR 
+TRABALHOS DERIVATIVOS DE E/OU (RE)DISTRIBUIR ESTE PRODUTO (OU QUALQUER 
+PARTE DO MESMO) ESTARÁ POR MEIO DESTE ATO CONCORDANDO EM SER VINCULADO 
+PELOS E ESTAR ACEITANDO TODOS OS TERMOS E CONDIÇÕES DESTE LICENÇA (E AS 
+RESPONSABILIDADES E OBRIGAÇÕES CONTIDAS NESTA LICENÇA). SE VOCÊ NÃO 
+ACEITAR (E CONCORDAR EM SER VINCULADO PELOS) TODOS OS TERMOS E 
+CONDIÇÕES DESTA LICENÇA, NÃO USE, COPIE, MODIFIQUE, CRIE TRABALHOS 
+DERIVATIVOS OU NEM (RE)DISTRIBUA ESTE PRODUTO NEM QUALQUER UMA DE SUAS 
+PARTES.
+
+2. VOCÊ NÃO PODERÁ USAR, MODIFICAR, COPIAR, CRIAR TRABALHOS DERIVATIVOS 
+DE, (RE)DISTRIBUIR, OU SUBLICENCIAR ESTE PRODUTO OU PARTE DO MESMO, 
+EXCETO CONFORME EXPRESSAMENTE FORNECIDO NESTA LICENÇA (MESMO QUE UMA LEI 
+APLICÁVEL LHE DÊ DIREITOS ADICIONAIS). QUALQUER TENTATIVA (MESMO SE 
+PERMITIDO POR LEI APLICÁVEL) EM USAR, MODIFICAR, COPIAR, CRIAR TRABALHOS 
+DERIVATIVOS DE, (RE)DISTRIBUIR OU SUBLICENCIAR ESTE PRODUTO OU PARTES DO 
+MESMO, IRÁ AUTOMÁTICA E IMEDIATAMENTE CANCELAR SEUS DIREITOS SOB ESTA 
+LICENÇA E PODERÁ CONSTITUIR UMA VIOLAÇÃO DE COPYRIGHT (O QUE PODE SER 
+SUJEITO A ATO JUDICIAL).
+AS RESTRIÇÕES INCLUÍDAS NESTA LICENÇA SÃO TAMBÉM LIMITAÇÕES NO ESCOPO 
+DESTA LICENÇA E DEFINEM TAMBÉM O ESCOPO DE SEUS DIREITOS SOB ESTA 
+LICENÇA. O NÃO CUMPRIMENTO DESSES TERMOS E CONDIÇÕES DA PRESENTE LICENÇA 
+POR PARTE DE VOCÊ OU A FALHA EM ATENDER QUALQUER OBRIGAÇÃO APLICÁVEL 
+IMPOSTA POR ESTA LICENÇA IRÁ AUTOMÁTICA E IMEDIATAMENTE CANCELAR SEUS 
+DIREITOS SOB ESTA LICENÇA E PODERÁ CAUSAR OU SER CONSIDERADO COMO 
+VIOLAÇÃO DE COPYRIGHT (O QUE PODE SER SUJEITO A ATO JUDICIAL). NADA NESTA 
+LICENÇA IRÁ IMPLICAR OU SER INTERPRETADO COMO UMA PROMESSA, OBRIGAÇÃO OU 
+ACORDO PARA NÃO PROCESSAR JUDICIALMENTE UMA VIOLAÇÃO DE COPYRIGHT OU DE 
+MARCA REGISTRADA.
+
+3. Esta licença não constitui ou implica uma renuncia de qualquer direito 
+à propriedade intelectual. Esta licença não transfere, designa, nem 
+transmite qualquer direito à propriedade intelectual (ex. não transfere a 
+propriedade dos copyrights ou marcas registradas).
+
+4. Sujeito aos termos e condições desta Licença, você poderá permitir que 
+um terceiro use a Sua cópia Deste Produto (ou uma cópia que você fizer e 
+distribuir, ou Seu Produto, ou respectivas partes do mesmo) desde que o 
+terceiro também aceite e concorde em ser vinculado por todos os termos e 
+condições desta Licença e o terceiro não estará proibido de usar Este 
+Produto (nem partes do mesmo) de acordo com esta Licença (consulte por 
+exemplo a Seção VI.7) ou por lei aplicável. Todavia, Você não estará 
+obrigado a garantir que o terceiro aceite (e concorde em estar vinculado 
+pelos termos) esta Licença se Você distribuir apenas o pacote de auto-
+extração (contendo Este Produto) que não permite que o usuário instale 
+(nem extraia) os arquivos incluídos no pacote até que este usuário aceite 
+e concorde em ser vinculado a todos os termos e condições desta Licença.
+
+5. SE NÃO TIVER CERTEZA DE QUE VOCÊ ENTENDE TODOS OS TERMOS DESTA 
+LICENÇA, OU SE VOCÊ NÃO TIVER CERTEZA QUE VOCÊ PODERÁ CUMPRIR COM TODOS 
+OS TERMOS E CONDIÇÕES DESTA LICENÇA, VOCÊ NÃO DEVERÁ USAR, COPIAR, 
+MODIFICAR, CRIAR TRABALHOS DERIVATIVOS DE, NEM (RE)DISTRIBUIR ESTE 
+PRODUTO, NEM QUALQUER PARTE DO MESMO. EM CASO DE DÚVIDA, VOCÊ DEVERÁ 
+CONSULTAR UM ADVOGADO.
+
+6. SE (EM CONTEXTO RELEVANTE) QUALQUER DISPOSIÇÃO DO CAPÍTULO IV DESTA 
+LICENÇA FOR INEXIGÍVEL, INVÁLIDA, OU PROIBIDA DE ACORDO COM A LEI 
+APLICÁVEL NA SUA JURISDIÇÃO, VOCÊ NÃO TERÁ NENHUM DIREITO SOB ESTA 
+LICENÇA E VOCÊ NÃO DEVERÁ USAR, COPIAR, MODIFICAR, CRIAR TRABALHOS 
+DERIVATIVOS DE, NEM (RE)DISTRIBUIR ESTE PRODUTO NEM QUALQUER PARTE DO 
+MESMO.
+
+7. Caso uma das disposições desta Licença, ou qualquer parte da mesma, 
+for identificada como inválida ou inexigível de acordo com uma lei 
+aplicável, isto não afetará a validade ou a exigibilidade das demais 
+partes desta Licença, e esta disposição inválida ou inexigível será 
+interpretada para refletir a intenção original da disposição e terá o 
+cumprimento exigido até o ponto máximo permitido pela lei aplicável de 
+modo a obter a intenção original da disposição o mais próximo possível.
+
+____________________________________________________________
+
+Acordo de Licença para Criptografia para as Massas.
+
+Copyright (C) 1998-2000 Paul Le Roux. Todos os direitos reservados.
+
+Este produto poderá ser copiado e distribuído gratuitamente, inclusive o 
+código fonte. 
+
+Você poderá modificar este produto e o código fonte e distribuir essas 
+modificações, e você poderá desenvolver novos trabalhos com base neste 
+produto desde que:
+
+1. Qualquer produto simplesmente derivado deste produto não seja chamado 
+de E4M, ou Criptografia para as Massas.
+
+2. Se for utilizar um código fonte no seu produto, e o seu produto for 
+distribuído com código fonte, você deverá incluir este aviso com aquelas 
+partes do código fonte que estará utilizando. 
+
+Ou,
+
+Se o seu produto for distribuído apenas em forma binária, você deverá 
+incluir na embalagem e no material de comercialização que faz referência 
+ao seu produto, um aviso que indique: 
+"Este produto usa componentes desenvolvidos por Paul Le Roux 
+<pleroux@swprofessionals.com>"
+
+3. Se for usar o código fonte desenvolvido por Eric Young, você deverá 
+também cumprir com os termos e condições do mesmo.
+
+4. Nada requer que você aceite esta Licença, pois você não a assinou. 
+Porém, nada mais lhe concede permissão para modificar ou distribuir o 
+produto ou seus trabalhos derivativos.
+
+Esses atos estão proibidos por lei se você não aceitar esta Licença. 
+
+5. Se um dos termos desta licença for identificado como sendo amplo no 
+escopo e declarado inválido por qualquer tribunal ou processo jurídico, 
+você concorda que todos os demais termos não serão afetados e 
+permanecerão válidos e exigíveis.
+
+6. ESTE PROGRAMA É DISTRIBUÍDO GRATUITAMENTE, PORTANTO NÃO HÁ NENHUMA 
+GARANTIA PARA O PROGRAMA, ATÉ O PONTO PERMITIDO POR LEI APLICÁVEL. A 
+MENOS QUE INDICADO AO CONTRÁRIO, O PROGRAMA É FORNECIDO "NO ESTADO EM QUE 
+SE ENCONTRA" SEM QUALQUER TIPO DE GARANTIA, TANTO EXPLÍCITA OU IMPLÍCITA 
+INCLUSIVE, MAS NÃO LIMITADO A, AS GARANTIAS DE COMERCIABILIDADE OU 
+ADEQUAÇÃO A QUALQUER PROPÓSITO ESPECÍFICO. O RISCO INTEIRO QUANTO À 
+QUALIDADE E DESEMPENHO DO PROGRAMA É SEU. SE ESTE PROGRAMA FOR 
+EVIDENCIADO COMO DEFEITUOSO, VOCÊ ASSUMIRÁ OS CUSTOS INCORRIDOS COM OS 
+SERVIÇOS DE REPAROS OU CORREÇÃO.
+
+7. EM NENHUMA CIRCUNSTÂNCIA, A MENOS QUE REQUERIDO POR LEI APLICÁVEL OU 
+ACORDADO POR ESCRITO COM O PROPRIETÁRIO DO COPYRIGHT, OU QUALQUER OUTRA 
+PARTE QUE POSSA MODIFICAR E/OU REDISTRIBUIR O PROGRAMA CONFORME PERMITIDO 
+ACIMA, A CRIPTOGRAFIA PARA AS MASSAS SERÁ RESPONSÁVEL PERANTE VOCÊ OU 
+QUALQUER OUTRA PARTE POR QUAISQUER DANOS, INCLUSIVE QUALQUER DANO GERAL, 
+ESPECIAL, INCIDENTAL, OU CONSEQUENCIAL RESULTANDO DO USO OU INCAPACIDADE 
+DE USAR O PROGRAMA INCLUSIVE, MAS NÃO LIMITADO A, PERDA DE DADOS OU DADOS 
+RENDERIZADOS INCORRETAMENTE, OU PERDAS SUSTENTADAS POR VOCÊ OU POR 
+TERCEIROS OU UMA FALHA NO PROGRAMA EM OPERAR COM QUALQUER OUTRO PROGRAMA 
+MESMO SE ESSE PROPRIETÁRIO OU OUTRA PARTE FORAM NOTIFICADOS DA 
+POSSIBILIDADE DA OCORRÊNCIA DESSES DANOS.
+____________________________________________________________
+
+Copyright (c) 1998-2008, Brian Gladman, Worcester, UK. Todos os direitos 
+reservados. 
+TERMOS DA LICENÇA
+
+A distribuição gratuita e o uso deste software são permitidos (com ou sem 
+alterações) desde que:
+
+ 1. as distribuições dos códigos fontes incluam o aviso de copyright
+   acima, esta lista de condições e a seguinte renúncia;
+
+ 2. as distribuições binárias incluam o aviso de copyright acima, esta
+    lista de condições e a seguinte renúncia na sua documentação;
+
+ 3. o nome do proprietário do copyright não é utilizado para endossar
+    produtos desenvolvidos usando este software sem autorização
+    específica e por escrito.
+
+RENÚNCIA
+
+Este software é fornecido "no estado em que se encontra" sem garantias 
+explícitas ou implícitas com relação às suas propriedades, inclusive, mas 
+não limitado a, a precisão e/ou a adequação para o propósito.
+____________________________________________________________
+
+Copyright (C) 1995-1997 Eric Young (eay@cryptsoft.com) Todos os direitos 
+reservados.
+
+Este pacote é uma implantação SSL escrita por Eric Young 
+(eay@cryptsoft.com).
+A implantação foi escrita para estar em conformidade com o Netscapes SSL. 
+Esta biblioteca é livre para uso comercial e não-comercial desde que as 
+condições a seguir sejam cumpridas.  As condições a seguir se aplicam a 
+todos os códigos identificados nesta distribuição, ou seja, RC4, RSA, 
+lhash, DES, etc., código; não apenas o código SSL.  A documentação SSL 
+incluída com esta distribuição é coberta pelos mesmos termos do copyright 
+exceto que o proprietário é Tim Hudson (tjh@cryptsoft.com). 
+O Copyright permanece do Eric Young, e como tal qualquer aviso de 
+Copyright no código não deverá ser removido.
+Se este pacote for utilizado em um produto, Eric Young deverá ter a 
+designação como autor das partes da biblioteca sendo utilizadas.
+Isto pode ser na forma de uma mensagem textual na iniciação do programa 
+ou na documentação (online ou textual) fornecida com o pacote.
+
+A redistribuição e uso em formas de fonte e binária, com ou sem 
+modificação, são permitidos desde que as condições a seguir sejam 
+cumpridas:
+1. As redistribuições dos códigos fontes devem manter o aviso de 
+copyright, esta lista de condições e a seguinte renúncia.
+2. As redistribuições em forma binária devem reproduzir o aviso de 
+copyright acima, esta lista de condições e a seguinte renuncia na 
+documentação e/ou demais material fornecido com a distribuição. 
+3. Todo o material de publicidade mencionando as características ou uso 
+deste software deverá exibir a seguinte confirmação:
+   "Este produto inclui um software criptográfico desenvolvido por Eric 
+Young (eay@cryptsoft.com)" 
+A palavra 'criptográfico' pode ser eliminada se as rotinas da 
+biblioteca utilizadas não forem relacionadas à criptografia:-).
+4. Se você incluir qualquer código específico do Windows (ou uma 
+derivativa do mesmo) a partir do diretório apps (código de aplicativo) 
+você deve incluir uma confirmação:
+"Este produto inclui um software escrito por Tim Hudson 
+(tjh@cryptsoft.com)"
+
+ESTE SOFTWARE É FORNECIDO POR ERIC YOUNG `NO ESTADO EM QUE SE ENCONTRA' E 
+QUALQUER GARANTIA EXPLÍCITA E IMPLÍCITA, INCLUSIVE, MAS NÃO LIMITADO A, 
+AS GARANTIAS IMPLÍCITAS DE COMERCIABILIDADE E ADEQUAÇÃO A QUALQUER 
+PROPÓSITO ESPECÍFICO SÃO INVÁLIDAS. EM NENHUMA CIRCUNSTÂNCIA O AUTOR OU 
+OS CONTRIBUIDORES SERÃO RESPONSÁVEIS POR QUALQUER DANO DIRETO, INDIRETO, 
+INCIDENTAL, ESPECIAL, EXEMPLAR OU CONSEQUENCIAL (INCLUSIVE MAS NÃO 
+LIMITADO A SUPRIMENTO DE BENS E SERVIÇOS SUBSTITUTOS; PERDA DO USO, DADOS 
+OU LUCROS; OU INTERRUPÇÃO DOS NEGÓCIOS) PORÉM CAUSADO E COM BASE NA 
+TEORIA DA RESPONSABILIDADE, SE EM CONTRATO, RESPONSABILIDADE RIGOROSA OU 
+PREJUÍZO (INCLUSIVE NEGLIGÊNCIA OU DE OUTRO MODO) RESULTANDO DE QUALQUER 
+MANEIRA PELO USO DESTE SOFTWARE, MESMO SE INFORMADOS DA POSSIBILIDADE DA 
+OCORRÊNCIA DESTE DANO.
+
+Os termos da licença e da distribuição para qualquer versão disponível 
+publicamente ou derivativo deste código não poderão ser alterados. Por 
+isso, este código não pode ser simplesmente copiado e colocado em outra 
+licença de distribuição (inclusive a Licença Pública GNU.]
+____________________________________________________________
+
+Copyright (C) 2002-2004 Mark Adler, todos os direitos reservados, versão 
+1.8, 9 Jan 2004
+
+Este software é fornecido 'no estado em que se encontra' sem garantia 
+explícita ou implícita.  Em nenhuma circunstância o autor será 
+responsável por qualquer dano resultando do uso deste software.
+
+A autorização é concedida a qualquer pessoa para usar este software para 
+qualquer finalidade, inclusive em aplicações comerciais e o mesmo poderá 
+ser alterado e redistribuído gratuitamente e está sujeito às seguintes 
+restrições:
+
+1. A origem deste software não deve ser representada erroneamente; você 
+não deverá reclamar que você escreveu o software original. Se for usar 
+este software em um produto, uma confirmação na documentação do produto 
+será apreciada porém, ela não é necessária
+2. As versões de fonte modificadas devem ser claramente marcadas como tal 
+e não devem ser representadas erroneamente como sendo um software 
+original.
+3. Este aviso não poderá ser removido ou alterado de qualquer 
+distribuição de origem.
+____________________________________________________________
+
+Copyright (c) 2001 Markus Friedl.  Todos os direitos reservados.
+
+A redistribuição e uso em formas de fonte e binária, com ou sem 
+modificação, são permitidos desde que as condições a seguir sejam 
+cumpridas:
+1. As redistribuições dos códigos fontes devem manter o aviso de 
+copyright acima, esta lista de condições e a seguinte renúncia;
+2. As redistribuições em forma binária devem reproduzir o aviso de 
+copyright acima, esta lista de condições e a seguinte renuncia na 
+documentação e/ou demais material fornecido com a distribuição.
+
+ESTE SOFTWARE É FORNECIDO PELO AUTOR 'NO ESTADO EM QUE SE ENCONTRA' E 
+QUALQUER GARANTIA EXPLÍCITA OU IMPLÍCITA, INCLUSIVE MAS NÃO LIMITADO A, 
+AS GARANTIAS IMPLÍCITAS DE COMERCIABILIDADE E ADEQUAÇÃO A QUALQUER 
+PROPÓSITO SÃO INVÁLIDAS. EM NENHUMA CIRCUNSTÂNCIA O AUTOR SERÁ 
+RESPONSÁVEL POR QUALQUER DANO DIRETO, INDIRETO, INCIDENTAL, ESPECIAL, 
+EXEMPLAR OU CONSEQUENCIAL (INCLUSIVE MAS NÃO LIMITADO A SUPRIMENTO DE 
+BENS E SERVIÇOS SUBSTITUTOS; PERDA DE USO, DADOS OU LUCROS; OU 
+INTERRUPÇÃO DOS NEGÓCIOS) CAUSADO E COM BASE NA TEORIA DA 
+RESPONSABILIDADE, RESPONSABILIDADE RIGOROSA OU PREJUÍZO (INCLUSIVE 
+NEGLIGÊNCIA OU DE OUTRO MODO) RESULTANDO DE QUALQUER MANEIRA DO USO DESTE 
+SOFTWARE, MESMO SE INFORMADO DA POSSIBILIDADE DA OCORRÊNCIA DESTE DANO.
