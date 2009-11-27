@@ -8,8 +8,8 @@
 import sys, os
 from PyQt4 import QtCore, QtGui
 
-LICENSE = "/usr/share/cpa/LicenseCPA.txt"
-WELCOME = "/usr/share/cpa/WelcomeMessage.txt"
+LICENSE = "/usr/share/cpa/mensagens/LicenseCPA.txt"
+WELCOME = "/usr/share/cpa/mensagens/WelcomeMessage.txt"
 XCPA = "/usr/bin/XCPA"
 
 def firstRun():
