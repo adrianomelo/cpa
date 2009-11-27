@@ -31,14 +31,48 @@ def showLicense():
 	''' Displays the license, returning True if the user accepted and False otherwise '''
 	msg = open(LICENSE, 'r')
 	QtGui.QApplication(sys.argv)
-	ret = QtGui.QMessageBox.question(None, u'Licença', u'%s\nVocê aceita os termos acima?' % msg.read().decode("utf-8"), u"&Aceitar", u"&Recusar")
-
+	dialog = QtGui.QDialog()
+	licenseMessage(dialog, msg)
+	ret = dialog.exec_()
 	try:
 		msg.close()
 	except IOError:
 		pass
 	
 	return ret == 0
+
+def licenseMessage(gui, msg):
+		gui.resize(580, 470)
+		verticalLayoutWidget = QtGui.QWidget(gui)
+		verticalLayoutWidget.setGeometry(QtCore.QRect(10, 10, 561, 441))
+		layout = QtGui.QVBoxLayout(verticalLayoutWidget)
+		textEdit = QtGui.QTextBrowser(verticalLayoutWidget)
+		layout.addWidget(textEdit)
+		btnDeny = QtGui.QPushButton(verticalLayoutWidget)
+		btnAccept = QtGui.QPushButton(verticalLayoutWidget)
+		spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+		spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Minimum)
+		spacerItem2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+		horizontalLayout = QtGui.QHBoxLayout()
+		horizontalLayout.addItem(spacerItem)
+		horizontalLayout.addWidget(btnAccept)
+		horizontalLayout.addItem(spacerItem1)
+		horizontalLayout.addWidget(btnDeny)
+		horizontalLayout.addItem(spacerItem2)
+		layout.addLayout(horizontalLayout)
+		gridlayout = QtGui.QGridLayout(TPMLog)
+		gridlayout.addLayout(layout, 0, 0, 1, 1)
+		
+		btnDeny.setText(QtGui.QApplication.translate("TPMLog", "&Recusar", None, QtGui.QApplication.UnicodeUTF8))
+		btnDeny.setShortcut("Alt+F")
+		btnAccept.setText("&Aceitar")
+		btnAccept.setShortcut("Alt+A")
+		gui.setWindowTitle(u"Licensa")
+		textEdit.setText(u"%s\n Você aceita os termos acima?" % msg.read().decode("utf-8"))
+
+		QtCore.QObject.connect(btnAccept, QtCore.SIGNAL("clicked()"), gui.accept)
+		QtCore.QObject.connect(btnDeny, QtCore.SIGNAL("clicked()"), gui.reject)
+	
 
 if __name__ == "__main__":
 	if firstRun():

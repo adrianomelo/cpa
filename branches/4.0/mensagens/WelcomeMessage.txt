@@ -1,6 +1,2 @@
-Com o CPA você poderá criar uma unidade segura no seu disco rígido para
-armazenar arquivos confidenciais. A proteção dos arquivos armazenados na
-unidade segura será feita utilizando-se recursos de criptografia.
-Essa unidade só será acessível por meio de uma senha que você definirá.
-Para obter mais informações consulte o manual online, disponível na opção
-"Ajuda" do CPA.
+Com o CPA você poderá criar uma unidade segura no seu disco rígido para armazenar arquivos confidenciais. A proteção dos arquivos armazenados na unidade segura será feita utilizando-se recursos de criptografia. Essa unidade só será acessível por meio de uma senha que você definirá.
+Para obter mais informações consulte o manual online, disponível na opção "Ajuda" do CPA.
