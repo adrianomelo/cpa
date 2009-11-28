@@ -60,7 +60,7 @@ def licenseMessage(gui, msg):
 		horizontalLayout.addWidget(btnDeny)
 		horizontalLayout.addItem(spacerItem2)
 		layout.addLayout(horizontalLayout)
-		gridlayout = QtGui.QGridLayout(TPMLog)
+		gridlayout = QtGui.QGridLayout(gui)
 		gridlayout.addLayout(layout, 0, 0, 1, 1)
 		
 		btnDeny.setText(QtGui.QApplication.translate("TPMLog", "&Recusar", None, QtGui.QApplication.UnicodeUTF8))
