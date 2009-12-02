@@ -19,7 +19,7 @@ def firstRun():
 def showWelcome():
 	''' Displays a welcome message '''
 	msg = open(WELCOME, 'r')
-	QtGui.QApplication(sys.argv)
+	app = QtGui.QApplication(sys.argv)
 	QtGui.QMessageBox.question(None, u'Bem vindo ao CPA', u'%s' % msg.read().decode("utf-8"), u"&Ok")
 
 	try:
@@ -30,7 +30,7 @@ def showWelcome():
 def showLicense():
 	''' Displays the license, returning True if the user accepted and False otherwise '''
 	msg = open(LICENSE, 'r')
-	QtGui.QApplication(sys.argv)
+	app = QtGui.QApplication(sys.argv)
 	dialog = QtGui.QDialog()
 	licenseMessage(dialog, msg)
 	ret = dialog.exec_()
@@ -38,18 +38,15 @@ def showLicense():
 		msg.close()
 	except IOError:
 		pass
-	
 	return ret == 1
 
 def licenseMessage(gui, msg):
 		gui.resize(580, 470)
-		verticalLayoutWidget = QtGui.QWidget(gui)
-		verticalLayoutWidget.setGeometry(QtCore.QRect(10, 10, 561, 441))
-		layout = QtGui.QVBoxLayout(verticalLayoutWidget)
-		textEdit = QtGui.QTextBrowser(verticalLayoutWidget)
+		layout = QtGui.QVBoxLayout()
+		textEdit = QtGui.QTextBrowser(gui)
 		layout.addWidget(textEdit)
-		btnDeny = QtGui.QPushButton(verticalLayoutWidget)
-		btnAccept = QtGui.QPushButton(verticalLayoutWidget)
+		btnDeny = QtGui.QPushButton(gui)
+		btnAccept = QtGui.QPushButton(gui)
 		spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
 		spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Minimum)
 		spacerItem2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
