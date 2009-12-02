@@ -39,7 +39,7 @@ def showLicense():
 	except IOError:
 		pass
 	
-	return ret == 0
+	return ret == 1
 
 def licenseMessage(gui, msg):
 		gui.resize(580, 470)
