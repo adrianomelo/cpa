@@ -3,18 +3,31 @@
 
 #  Copyright (C) 2009 - Tutoo Team
 
-# Wrapper around XCPA, displays messages in the first time the user runs CPA
+# Wrapper around XCPA, checks if the user belongs to the group 'cpa' and
+# displays messages if it's the first time CPA is running
 
 import sys, os
 from PyQt4 import QtCore, QtGui
 
-LICENSE = "/usr/share/cpa/mensagens/LicenseCPA.txt"
-WELCOME = "/usr/share/cpa/mensagens/WelcomeMessage.txt"
-XCPA = "/usr/bin/XCPA"
+os.chdir(os.path.dirname(sys.argv[0]))
+
+LICENSE = "../share/cpa/mensagens/LicenseCPA.txt"
+WELCOME = "../share/cpa/mensagens/WelcomeMessage.txt"
+XCPA = "XCPA"
+
+def hasGroup():
+	''' Checks if the user belongs to the cpa group '''
+	groups = os.popen("groups").read().split()
+	return "cpa" in groups
 
 def firstRun():
 	''' Checks if this is the first time XCPA is run '''
 	return not os.path.isdir(os.path.join(os.getenv("HOME"), ".cpa"))
+
+def showGroupMsg():
+	''' Displays a welcome message '''
+	app = QtGui.QApplication(sys.argv)
+	QtGui.QMessageBox.critical(None, u'Erro de permissão', u'Você deve pertencer ao grupo \'cpa\' para rodar o CPA', u"&Ok")
 
 def showWelcome():
 	''' Displays a welcome message '''
@@ -41,37 +54,41 @@ def showLicense():
 	return ret == 1
 
 def licenseMessage(gui, msg):
-		gui.resize(580, 470)
-		layout = QtGui.QVBoxLayout()
-		textEdit = QtGui.QTextBrowser(gui)
-		layout.addWidget(textEdit)
-		btnDeny = QtGui.QPushButton(gui)
-		btnAccept = QtGui.QPushButton(gui)
-		spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-		spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Minimum)
-		spacerItem2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-		horizontalLayout = QtGui.QHBoxLayout()
-		horizontalLayout.addItem(spacerItem)
-		horizontalLayout.addWidget(btnAccept)
-		horizontalLayout.addItem(spacerItem1)
-		horizontalLayout.addWidget(btnDeny)
-		horizontalLayout.addItem(spacerItem2)
-		layout.addLayout(horizontalLayout)
-		gridlayout = QtGui.QGridLayout(gui)
-		gridlayout.addLayout(layout, 0, 0, 1, 1)
-		
-		btnDeny.setText(QtGui.QApplication.translate("TPMLog", "&Recusar", None, QtGui.QApplication.UnicodeUTF8))
-		btnDeny.setShortcut("Alt+F")
-		btnAccept.setText("&Aceitar")
-		btnAccept.setShortcut("Alt+A")
-		gui.setWindowTitle(u"Licensa")
-		textEdit.setText(u"%s\n Você aceita os termos acima?" % msg.read().decode("utf-8"))
+	gui.resize(580, 470)
+	layout = QtGui.QVBoxLayout()
+	textEdit = QtGui.QTextBrowser(gui)
+	layout.addWidget(textEdit)
+	btnDeny = QtGui.QPushButton(gui)
+	btnAccept = QtGui.QPushButton(gui)
+	spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+	spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Minimum)
+	spacerItem2 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+	horizontalLayout = QtGui.QHBoxLayout()
+	horizontalLayout.addItem(spacerItem)
+	horizontalLayout.addWidget(btnAccept)
+	horizontalLayout.addItem(spacerItem1)
+	horizontalLayout.addWidget(btnDeny)
+	horizontalLayout.addItem(spacerItem2)
+	layout.addLayout(horizontalLayout)
+	gridlayout = QtGui.QGridLayout(gui)
+	gridlayout.addLayout(layout, 0, 0, 1, 1)
+	
+	btnDeny.setText(QtGui.QApplication.translate("TPMLog", "&Recusar", None, QtGui.QApplication.UnicodeUTF8))
+	btnDeny.setShortcut("Alt+F")
+	btnAccept.setText("&Aceitar")
+	btnAccept.setShortcut("Alt+A")
+	gui.setWindowTitle(u"Licensa")
+	textEdit.setText(u"%s\n Você aceita os termos acima?" % msg.read().decode("utf-8"))
 
-		QtCore.QObject.connect(btnAccept, QtCore.SIGNAL("clicked()"), gui.accept)
-		QtCore.QObject.connect(btnDeny, QtCore.SIGNAL("clicked()"), gui.reject)
+	QtCore.QObject.connect(btnAccept, QtCore.SIGNAL("clicked()"), gui.accept)
+	QtCore.QObject.connect(btnDeny, QtCore.SIGNAL("clicked()"), gui.reject)
 	
 
 if __name__ == "__main__":
+	if not hasGroup():
+		showGroupMsg()
+		sys.exit(0)
+	
 	if firstRun():
 		showWelcome()
 
