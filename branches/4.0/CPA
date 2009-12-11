@@ -25,7 +25,7 @@ def firstRun():
 	return not os.path.isdir(os.path.join(os.getenv("HOME"), ".cpa"))
 
 def showGroupMsg():
-	''' Displays a welcome message '''
+	''' Displays an erro message in case the user does not belong to group cpa '''
 	app = QtGui.QApplication(sys.argv)
 	QtGui.QMessageBox.critical(None, u'Erro de permissão', u'Você deve pertencer ao grupo \'cpa\' para rodar o CPA', u"&Ok")
 
