@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="XCPA" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/XCPA" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="/home/gustavo/XCPA/" />
+				</ResourceCompiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/XCPA" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`wx-config --cflags`" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="DlgAcessarunidade.cpp" />
+		<Unit filename="DlgAcessarunidade.h" />
+		<Unit filename="DlgNovaUnidade.cpp" />
+		<Unit filename="DlgNovaUnidade.h" />
+		<Unit filename="DlgTrocarSenha.cpp" />
+		<Unit filename="DlgTrocarSenha.h" />
+		<Unit filename="NewDialog.h" />
+		<Unit filename="PnlConcluir.cpp" />
+		<Unit filename="PnlConcluir.h" />
+		<Unit filename="XCPAApp.cpp" />
+		<Unit filename="XCPAApp.h" />
+		<Unit filename="XCPAMainDlg.cpp" />
+		<Unit filename="XCPAMainDlg.h" />
+		<Unit filename="myProcess.cpp" />
+		<Unit filename="myProcess.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="XCPAApp.cpp" main="XCPAMainDlg" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/DlgAcessarunidade.wxs" src="DlgAcessarunidade.cpp" hdr="DlgAcessarunidade.h" name="DlgAcessarunidade" language="CPP" />
+					<wxDialog wxs="wxsmith/DlgNovaUnidade.wxs" src="DlgNovaUnidade.cpp" hdr="DlgNovaUnidade.h" name="DlgNovaUnidade" language="CPP" />
+					<wxPanel wxs="wxsmith/PnlConcluir.wxs" src="PnlConcluir.cpp" hdr="PnlConcluir.h" name="PnlConcluir" language="CPP" />
+					<wxDialog wxs="wxsmith/DlgTrocarSenha.wxs" src="DlgTrocarSenha.cpp" hdr="DlgTrocarSenha.h" name="DlgTrocarSenha" language="CPP" />
+					<wxDialog wxs="wxsmith/XCPAMainDlg.wxs" src="XCPAMainDlg.cpp" hdr="XCPAMainDlg.h" name="XCPAMainDlg" language="CPP" />
+					<wxDialog wxs="wxsmith/NewDialog.wxs" src="NewDialog.cpp" hdr="NewDialog.h" name="NewDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

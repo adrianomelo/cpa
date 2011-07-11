@@ -1,0 +1,36 @@
+- DlgNovaUnidade.h - linha 80: corrigido
+	ChecaEspacoLivre -> ChecarEspacoLivre
+- XCPAMainDlg.cpp - linha 105: adicionado
+	XCPAMainDlg::~XCPAMainDlg()
+	{
+	}
+- XCPAMainDlg.cpp - linha 372: adicionado
+	void XCPAMainDlg::OnPanel1Paint(wxPaintEvent& event)
+	{
+	}
+- XCPAApp.cpp - linha 36: adicionado
+	int XCPAApp::OnExit()
+	{
+    		return 0;
+    	}
+- XCPAMainDlg.cpp - linha 327: removida variável (warning)
+	char buffer[255];
+- XCPAMainDlg.cpp - linha 324: reimplementada a função de ajuda
+	void XCPAMainDlg::OnBtAjudaClick(wxCommandEvent& event)
+	{
+	    //wxString spath;
+	    //spath =_T("/usr/share/cpa/ajuda/index.html");
+	    //::wxLaunchDefaultBrowser(spath);
+
+	    int pid;
+	    char *const helpfirefox[] = {"firefox", "/usr/share/cpa/ajuda/index.html", NULL};
+	    char *const helpkonqueror[] = {"konqueror", "/usr/share/cpa/ajuda/index.html", NULL};
+	    pid = fork();
+	    if (pid == 0)
+	    {
+		if (execvp("firefox", helpfirefox) == -1)
+		    execvp("konqueror", helpkonqueror);
+		exit(0);
+	    }
+	}
+- Todos os arquivos: convertidos para UTF-8

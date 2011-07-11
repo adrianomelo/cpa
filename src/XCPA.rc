@@ -1,0 +1,13 @@
+#include "resource.h"
+
+//////////////////////////////////////////////////////////
+// ICONS
+// Icon com menor id é selecionado como ícone da aplicação
+
+IDI_XCPA        ICON        ".\\imagens\\itautec.ico"
+
+
+//////////////////////////////////////////////////////////
+// BITMAPS
+//
+
