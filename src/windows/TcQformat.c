@@ -88,57 +88,57 @@ enum wizard_pages
 	REVISE THE 'DECOY_OS_INSTRUCTIONS' STRING! */
 
 	INTRO_PAGE,
-			SYSENC_TYPE_PAGE,
-					SYSENC_HIDDEN_OS_REQ_CHECK_PAGE,
-			SYSENC_SPAN_PAGE,
-			SYSENC_PRE_DRIVE_ANALYSIS_PAGE,
-			SYSENC_DRIVE_ANALYSIS_PAGE,
-			SYSENC_MULTI_BOOT_MODE_PAGE,
-			SYSENC_MULTI_BOOT_SYS_EQ_BOOT_PAGE,
-			SYSENC_MULTI_BOOT_NBR_SYS_DRIVES_PAGE,
-			SYSENC_MULTI_BOOT_ADJACENT_SYS_PAGE,
-			SYSENC_MULTI_BOOT_NONWIN_BOOT_LOADER_PAGE,
-			SYSENC_MULTI_BOOT_OUTCOME_PAGE,
+	SYSENC_TYPE_PAGE,
+	SYSENC_HIDDEN_OS_REQ_CHECK_PAGE,
+	SYSENC_SPAN_PAGE,
+	SYSENC_PRE_DRIVE_ANALYSIS_PAGE,
+	SYSENC_DRIVE_ANALYSIS_PAGE,
+	SYSENC_MULTI_BOOT_MODE_PAGE,
+	SYSENC_MULTI_BOOT_SYS_EQ_BOOT_PAGE,
+	SYSENC_MULTI_BOOT_NBR_SYS_DRIVES_PAGE,
+	SYSENC_MULTI_BOOT_ADJACENT_SYS_PAGE,
+	SYSENC_MULTI_BOOT_NONWIN_BOOT_LOADER_PAGE,
+	SYSENC_MULTI_BOOT_OUTCOME_PAGE,
 	VOLUME_TYPE_PAGE,
-				HIDDEN_VOL_WIZARD_MODE_PAGE,
+	HIDDEN_VOL_WIZARD_MODE_PAGE,
 	VOLUME_LOCATION_PAGE,
-		DEVICE_TRANSFORM_MODE_PAGE,
-				HIDDEN_VOL_HOST_PRE_CIPHER_PAGE,
-				HIDDEN_VOL_PRE_CIPHER_PAGE,
+	DEVICE_TRANSFORM_MODE_PAGE,
+	HIDDEN_VOL_HOST_PRE_CIPHER_PAGE,
+	HIDDEN_VOL_PRE_CIPHER_PAGE,
 	CIPHER_PAGE,
 	SIZE_PAGE,
-				HIDDEN_VOL_HOST_PASSWORD_PAGE,
+	HIDDEN_VOL_HOST_PASSWORD_PAGE,
 	PASSWORD_PAGE,
-		FILESYS_PAGE,
-			SYSENC_COLLECTING_RANDOM_DATA_PAGE,
-			SYSENC_KEYS_GEN_PAGE,
-			SYSENC_RESCUE_DISK_CREATION_PAGE,
-			SYSENC_RESCUE_DISK_BURN_PAGE,
-			SYSENC_RESCUE_DISK_VERIFIED_PAGE,
-			SYSENC_WIPE_MODE_PAGE,
-			SYSENC_PRETEST_INFO_PAGE,
-			SYSENC_PRETEST_RESULT_PAGE,
-			SYSENC_ENCRYPTION_PAGE,
-		NONSYS_INPLACE_ENC_RESUME_PASSWORD_PAGE,
-		NONSYS_INPLACE_ENC_RESUME_PARTITION_SEL_PAGE,
-		NONSYS_INPLACE_ENC_RAND_DATA_PAGE,
-		NONSYS_INPLACE_ENC_WIPE_MODE_PAGE,
-		NONSYS_INPLACE_ENC_ENCRYPTION_PAGE,
-		NONSYS_INPLACE_ENC_ENCRYPTION_FINISHED_PAGE,
+	FILESYS_PAGE,
+	SYSENC_COLLECTING_RANDOM_DATA_PAGE,
+	SYSENC_KEYS_GEN_PAGE,
+	SYSENC_RESCUE_DISK_CREATION_PAGE,
+	SYSENC_RESCUE_DISK_BURN_PAGE,
+	SYSENC_RESCUE_DISK_VERIFIED_PAGE,
+	SYSENC_WIPE_MODE_PAGE,
+	SYSENC_PRETEST_INFO_PAGE,
+	SYSENC_PRETEST_RESULT_PAGE,
+	SYSENC_ENCRYPTION_PAGE,
+	NONSYS_INPLACE_ENC_RESUME_PASSWORD_PAGE,
+	NONSYS_INPLACE_ENC_RESUME_PARTITION_SEL_PAGE,
+	NONSYS_INPLACE_ENC_RAND_DATA_PAGE,
+	NONSYS_INPLACE_ENC_WIPE_MODE_PAGE,
+	NONSYS_INPLACE_ENC_ENCRYPTION_PAGE,
+	NONSYS_INPLACE_ENC_ENCRYPTION_FINISHED_PAGE,
 	FORMAT_PAGE,
 	FORMAT_FINISHED_PAGE,
-					SYSENC_HIDDEN_OS_INITIAL_INFO_PAGE,
-					SYSENC_HIDDEN_OS_WIPE_INFO_PAGE,
-						DEVICE_WIPE_MODE_PAGE,
-						DEVICE_WIPE_PAGE
+	SYSENC_HIDDEN_OS_INITIAL_INFO_PAGE,
+	SYSENC_HIDDEN_OS_WIPE_INFO_PAGE,
+	DEVICE_WIPE_MODE_PAGE,
+	DEVICE_WIPE_PAGE
 };
 
-#define TIMER_INTERVAL_RANDVIEW							30
-#define TIMER_INTERVAL_SYSENC_PROGRESS					30
-#define TIMER_INTERVAL_NONSYS_INPLACE_ENC_PROGRESS		30
+#define TIMER_INTERVAL_RANDVIEW				30
+#define TIMER_INTERVAL_SYSENC_PROGRESS			30
+#define TIMER_INTERVAL_NONSYS_INPLACE_ENC_PROGRESS	30
 #define TIMER_INTERVAL_SYSENC_DRIVE_ANALYSIS_PROGRESS	100
-#define TIMER_INTERVAL_WIPE_PROGRESS					30
-#define TIMER_INTERVAL_KEYB_LAYOUT_GUARD				10
+#define TIMER_INTERVAL_WIPE_PROGRESS			30
+#define TIMER_INTERVAL_KEYB_LAYOUT_GUARD		10
 
 enum sys_encryption_cmd_line_switches
 {
@@ -166,7 +166,7 @@ typedef struct
 // Expected duration of system drive analysis, in ms 
 #define SYSENC_DRIVE_ANALYSIS_ETA		(4*60000)
 
-BootEncryption			*BootEncObj = NULL;
+BootEncryption		*BootEncObj = NULL;
 BootEncryptionStatus	BootEncStatus;
 
 HWND hCurPage = NULL;		/* Handle to current wizard page */
@@ -337,20 +337,20 @@ HBITMAP Hbmp_Excluir_c = NULL;
 //*******************************************************************
 BOOL LerConfiguracoes()
 {
-//  BOOL tmpbDevice; 
-//  HANDLE hCnfFile;
-//  __int8 *buffer;
-  //DWORD bytesRead, bytesWritten;
+	/*BOOL tmpbDevice; 
+	HANDLE hCnfFile;
+	__int8 *buffer;
+	DWORD bytesRead, bytesWritten;*/
 	
-    szDiskFile[0]=0;
-    szFileName[0]=0;
+	szDiskFile[0]=0;
+	szFileName[0]=0;
 
 	SHGetFolderPath (NULL, CSIDL_LOCAL_APPDATA, NULL, 0, szDiskFile);	
-    strcpy(szFileName, "ArquivosSeguros.it");
+	strcpy(szFileName, "ArquivosSeguros.it");
 	strcat (szDiskFile, "\\");
 	strcat (szDiskFile, szFileName);				
 
-    //SHGetFolderPath (NULL, CSIDL_MYDOCUMENTS, NULL, 0, szConfigFileName);
+	//SHGetFolderPath (NULL, CSIDL_MYDOCUMENTS, NULL, 0, szConfigFileName);
 	SHGetFolderPath (NULL, CSIDL_LOCAL_APPDATA, NULL, 0, szConfigFileName);
 	strcat (szConfigFileName, "\\cpa.conf");			
     
@@ -371,57 +371,56 @@ BOOL LerConfiguracoes()
 //*******************************************************************
 BOOL GravarConfiguracoes(char *szchave, char *szvalor)
 {
-    //szchave in "VAZIO", "LIBERADO", "MONTADO" --> criar enum.
+	//szchave in "VAZIO", "LIBERADO", "MONTADO" --> criar enum.
 	SHGetFolderPath (NULL, CSIDL_LOCAL_APPDATA, NULL, 0, szConfigFileName);
 	strcat (szConfigFileName, "\\cpa.conf");			  
-    WritePrivateProfileString("CPA", szchave, szvalor, szConfigFileName);	
+	WritePrivateProfileString("CPA", szchave, szvalor, szConfigFileName);	
 	return true;
 }
 
 void ChecaUnidadeVazia()
 {
 	char sztmp[255];
-    struct _finddata_t c_file;
-    intptr_t hFile;
+	struct _finddata_t c_file;
+	intptr_t hFile;
 	bool bVazio = false;
-    char szFileUpper[255];
+	char szFileUpper[255];
 
 	LerConfiguracoes();
 	//MessageBox(NULL, szConfigMontado, "montado", MB_OK);
 	if ( strcmp(szConfigMontado, "TRUE")) //se não estiver n=montado, pula fora;
 		return;
 
-   strcpy (sztmp, szConfigUnidade);
-   strcat(sztmp, "*.*");
-   //MessageBox(NULL, sztmp, "sztmp", MB_OK);
-   if( (hFile = _findfirst( sztmp, &c_file )) == -1L )
-   {
-	   bVazio = true;
-	   //GravarConfiguracoes("VAZIO", "TRUE");
-	   //MessageBox(NULL, "VAZIO", "TRUE", MB_OK);
-   }
-   else //sempre deve existir ao menos um arquivo, o $RECYCLE.BIN
-   {
-	   int i;
-       for (i=0; c_file.name[i] != '\0'; i++)
-		   szFileUpper[i] = toupper(c_file.name[i]);
+	strcpy (sztmp, szConfigUnidade);
+	strcat(sztmp, "*.*");
+	//MessageBox(NULL, sztmp, "sztmp", MB_OK);
+	if( (hFile = _findfirst( sztmp, &c_file )) == -1L )
+	{
+		bVazio = true;
+		//GravarConfiguracoes("VAZIO", "TRUE");
+		//MessageBox(NULL, "VAZIO", "TRUE", MB_OK);
+	} 
+	else //sempre deve existir ao menos um arquivo, o $RECYCLE.BIN
+	{
+		int i;
+		for (i=0; c_file.name[i] != '\0'; i++)
+		szFileUpper[i] = toupper(c_file.name[i]);
 
-	   szFileUpper[i] = '\0';
-	   while ( ! bVazio &&
-		     ( !strcmp(szFileUpper,"RECYCLE.BIN") ||
-			   !strcmp(szFileUpper,"$RECYCLE.BIN") ||
-		       !strcmp(szFileUpper,"SYSTEM VOLUME INFORMATION") ||
-			   !strcmp(szFileUpper,"$SYSTEM VOLUME INFORMATION") ||
-			   !strcmp(szFileUpper,"RECYCLED") ||
-			   !strcmp(szFileUpper,"$RECYCLED") )
-			 )
+		szFileUpper[i] = '\0';
+	   while ( !bVazio &&
+			( !strcmp(szFileUpper,"RECYCLE.BIN") ||
+			!strcmp(szFileUpper,"$RECYCLE.BIN") ||
+			!strcmp(szFileUpper,"SYSTEM VOLUME INFORMATION") ||
+			!strcmp(szFileUpper,"$SYSTEM VOLUME INFORMATION") ||
+			!strcmp(szFileUpper,"RECYCLED") ||
+			!strcmp(szFileUpper,"$RECYCLED")))
 	 {
-        bVazio = (_findnext(hFile, &c_file) == -1L);
+		bVazio = (_findnext(hFile, &c_file) == -1L);
 		
-       for (i=0; c_file.name[i] != '\0'; i++)
-		   szFileUpper[i] = toupper(c_file.name[i]);
+		for (i=0; c_file.name[i] != '\0'; i++)
+			szFileUpper[i] = toupper(c_file.name[i]);
 
-	   szFileUpper[i] = '\0';
+		szFileUpper[i] = '\0';
 	 }
    }
  
