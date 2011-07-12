@@ -13,7 +13,7 @@ os.chdir(os.path.dirname(sys.argv[0]))
 
 LICENSE = "../share/cpa/mensagens/LicenseCPA.txt"
 WELCOME = "../share/cpa/mensagens/WelcomeMessage.txt"
-XCPA = "XCPA"
+XCPA = "src/XCPA"
 
 def hasGroup():
 	''' Checks if the user belongs to the cpa group '''
